@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Profile</title>
+    <style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f2f2f2;
+        text-align: center;
+        padding: 40px;
+    }
+    img{
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+    }
+      
+    }
+</style>
+</head>
+<body>
+    <div class="card">
+        <img src="me.jpg" alt="Profile Photo">
+        <h1>Hello, I'm [Thomas Shreeve]</h1>
+        <p>A beginner developer learning to build cool things 💻</p>
+
+        <h3>My Skills</h3>
+        <ul>
+            <li>Learning HTML</li>
+            <li>Learning CSS</li>
+            <li>Learning JavaScript</li>
+        </ul>
+
+        <button onclick="changeText()">Click Me</button>
+        <p id="message"></p>
+    </div>
+    <script>
+    function changeText() {
+        document.getElementById("message").innerText = "Thanks for visiting my page! 🚀";
+    }
+</script>
+</body>
+</html>
